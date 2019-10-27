@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<header>
+
+    <title> Canvas Practice </title>
+
+    <style>
+
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+    
+        canvas {
+            border: 1px solid black;
+        }
+
+        #screen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+        }
+
+        h1 {
+            border: solid 3px black;
+            font-size: 4rem;
+            background-color: black;
+            align-self: center;
+            color: white;
+            padding: 3px 12px 3px 12px;
+            transform: skew(25deg);
+            width: 65%;
+            text-align: center;
+        }
+
+        h1:hover {
+            text-decoration: underline yellow;
+        }
+
+        #text {
+            transform: skew(-25deg);
+        }
+    
+    </style>
+
+</header>
+
+<body>
+
+    <canvas> </canvas>
+
+    <script src="Canvas.js"> </script>
+
+    <div id="screen">
+        <h1> <div id="text">Bianca, you should learn to code!</div> </h1>
+    </div>
+
+</body>

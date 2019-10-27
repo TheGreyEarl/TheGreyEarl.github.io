@@ -42,7 +42,7 @@ function Circle(x, y, dx, dy, radius, color) {
         ctx.stroke();
         ctx.fill();
         ctx.strokeStyle = "black";
-        ctx.fillStyle = this.color
+        ctx.fillStyle = this.color;
     }
 
     this.update = function() {
@@ -50,13 +50,13 @@ function Circle(x, y, dx, dy, radius, color) {
             this.dx = -this.dx;
         } else if (this.x - this.radius < 0) {
             this.dx = -this.dx;
-        }
+        };
 
         if (this.y + this.radius > innerHeight) {
             this.dy = -this.dy;
         } else if (this.y - this.radius < 0) {
             this.dy = -this.dy;
-        }
+        };
 
         this.x += this.dx;
         this.y += this.dy;
@@ -64,8 +64,6 @@ function Circle(x, y, dx, dy, radius, color) {
         this.draw();
     }
 }
-
-
 
 var circleArray = [];
 
@@ -77,7 +75,7 @@ for (var i = 0; i < 350; i++) {
     var dy = (Math.random() - 0.5) * 4;
     function getRandomColour(){
         var red = Math.floor(Math.random()* 255);
-        var green = Math.floor(Math.random() * 255);
+        var green = 0; //Math.floor(Math.random() * 255);
         var blue = Math.floor(Math.random() * 255);
       
         return "rgb("+red+","+green+"," +blue+" )";  
